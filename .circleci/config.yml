@@ -130,13 +130,13 @@ commands:
           name: Get xmllint
           command: |
             sudo apt-get install libxml2-utils
-  #install-npm-ajv:
-  #  description: "Install ajv"
-  #  steps:
-  #    - run:
-  #        name: Get ajv
-  #        command: |
-  #          sudo npm install -g ajv-cli
+  install-npm-ajv:
+   description: "Install ajv"
+   steps:
+     - run:
+         name: Get ajv
+         command: |
+           sudo npm install -g ajv-cli
   install-npm-json-diff:
     description: "Install json-diff"
     steps:
